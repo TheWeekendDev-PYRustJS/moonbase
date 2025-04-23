@@ -1,0 +1,49 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "How are you", "Is any one there?", "Hello", "Good day", "Whats up", "Hey", "greetings"],
+      "responses": ["Hello, how can I be of assistance?", "Hello and welcome to the moon tour, do you have a question?", "Welcome to the moon, how can I help you?", "Hi there, how can I help?", "Hello, would you like to know a fact about the moon?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "good bye", "I am leaving", "Have a Good day", "ciao", "","see ya", "bye now", "Thank you!"],
+      "responses": ["Goodbye!", "Goodbye, and please come see us again!", "Goodbye, and thank you for taking the tour."]
+    },
+    {
+      "tag": "surface",
+      "patterns": ["Tell me a fact about the moon?", "What is the surface of the moon made of?", "What is the surface of the moon like?"],
+      "responses": ["The Moon is covered by a rubble pile of charcoal-gray, powdery dust, and rocky debris called the lunar regolith.", "Beneath the regolith on the moons surface lies fractured bedrock known as the megaregolith.", "The Moon’s light areas on the surface are called highlands, while the dark areas known as maria are ancient lava-filled impact basins on the moons surface.", "Tycho Crater is a prominent lunar impact crater over 52 miles (85 km) wide. This is just one of many craters on the moon's hostile surface.", "Craters and surface features on the Moon have been preserved for billions of years due to minimal erosion.", "Temperatures on the Moon's surface range from about 260°F (127°C) in sunlight to -280°F (-173°C) in darkness.", "The Moon's surface shows signs of water, including water molecules detected in sunlit regions like Clavius Crater.", "One fact about the moon's surface is no liquid water on the surface, but ice has been detected in permanently shadowed craters near the poles.", "The Moon’s surface is covered by a fine, powdery dust and rocky debris called regolith, formed from billions of years of meteorite impacts.", "The Moon has no weather or atmosphere to erode its surface, so craters from impacts millions (even billions) of years ago are still visible.", "The moon's surface has dark areas called maria (Latin for 'seas',) are ancient volcanic plains, while lighter areas are highlands made mostly of anorthosite rock.", "Surface temperatures range from about -173°C (-280°F) at night to 127°C (260°F) during the day."]
+    },
+    {
+      "tag": "phases",
+      "patterns": ["What are the phases of the moon?", "What causes the moon phases?"],
+      "responses": ["To describe one of the phases of the moon, a full moon occurs when the side of the Moon facing Earth is fully lit by the Sun.", "To describe one of the phases of the moon, a new moon happens when the side of the Moon facing Earth is in shadow, while the far side receives sunlight.", "The moon has eight main phases: These include New Moon, Waxing Crescent, First Quarter, Waxing Gibbous, Full Moon, Waning Gibbous, Last Quarter, and Waning Crescent.", "Moon phases are caused by the changing angles of the Sun, Moon, and Earth. The four main phases are the new moon, the half moon, the quarter moon, and the full moon.", "A full cycle of phases (a synodic month) lasts about 29.5 days, completing the moons eight phases which are The New Moon, Waxing Crescent, First Quarter, Waxing Gibbous, Full Moon, Waning Gibbous, Last Quarter, and Waning Crescent."]
+    },
+    {
+      "tag": "fullmoon",
+      "patterns": ["When is the next fullmoon?", "When is the next new moon?", "What day is the next new moon?", "What day is the next fullmoon?", "When was the last fullmoon?", "When was the last new moon?"],
+      "responses": ["To assist you fully, here is a website that will give you those date: https://www.timeanddate.com/moon/phases/", "Here is a website that will give you that information: https://www.timeanddate.com/moon/phases/"]
+    },
+    {
+      "tag": "gravity",
+      "patterns": ["Tell me about the gravity on the moon?", "Does the moon have gravity?"],
+      "responses": ["Gravity on the Moon is about one-sixth as strong as Earth’s gravity, causing astronauts to appear to bounce when walking.", "Because of the lower gravity, a person can jump about six times higher on the Moon than on Earth.", "The Moon's gravity is the main driver of Earth’s tides.", "The Moon’s low gravity cannot support a sustained atmosphere, which is why it has none.", "When speaking of the moons gravity, the gravitational interaction between Earth and Moon causes tidal locking, leading to the same side always facing Earth."]
+    },
+    {
+      "tag": "orbit",
+      "patterns": ["Does the moon orbit any planets?", "What planets orbit the moon?"],
+      "responses": ["The Moon orbits Earth every 27 Earth days, which matches its rotational period — a condition called synchronous rotation.", "From Earth, the Moon appears to complete one orbit in about 29 days due to Earth’s movement around the Sun.", "The same side of the Moon always faces Earth, known incorrectly as the 'dark side' as it orbits Earth.", "When speaking of the moons orbit, the Moon is slowly drifting away from Earth at a rate of about one inch per year.", "The Moon orbits Earth at an average distance of 238,855 miles (384,400 kilometers).", "The Moon orbits Earth in an elliptical (oval-shaped) path, not a perfect circle.", "As the moon orbits the Earth, it's average distance from Earth is about 384,400 km (238,855 miles).", "It takes about 27.3 days for the Moon to orbit Earth (a sidereal month).", "The Moon is tidally locked—it rotates once per orbit, which is why we always see the same side from Earth."]
+    },
+    {
+      "tag": "atmosphere",
+      "patterns": ["What is the atmosphere of the moon like?", "Is the air on the moon breathable?", "Is the moon air toxic?", "Can I breath on the moon?"],
+      "responses": ["The Moon has a very thin and weak atmosphere that offers no protection from solar radiation or meteoroid impacts. The atmosphere is toxic to humans!", "The Moon technically has an exosphere, not a true atmosphere—it’s extremely thin and lacks breathable air.", "The exosphere contains trace gases like helium, neon, and hydrogen, but they are so sparse they don’t behave like a normal gas. These gases are toxic for humans to breath.","Because of the lack of atmosphere, there is no wind, rain, or weather on the Moon. Astronauts must wear special suits, as the gases in the atmosphere are toxic to humans. ", "The exosphere is partially sustained by particles from the solar wind and from impacts with micrometeorites. The moons exosphere is toxic to humans.", "The Moon technically has an exosphere, not a true atmosphere—it’s extremely thin and lacks breathable air.", "Its exosphere contains trace gases like helium, neon, and hydrogen, but they are so sparse they don’t behave like a normal gas. These gases are deadly to humans.", "Because of the lack of atmosphere, there is no wind, rain, or weather on the Moon. The atmosphere is unbreathable.", "Without a substantial atmosphere, sound cannot travel, and humans can not breath on the Moon."]
+    },
+    {
+      "tag": "life",
+      "patterns": ["Is there life on the moon?", "Are there aliens on the moon", "Are there extraterrestrials on the moon?", "Is there extraterrestrial life on the moon?", "Are there beings living on the moon?"],
+      "responses": ["There is no evidence that life currently exists on the Moon.", "The discovery of water ice in permanently shadowed lunar craters increases the potential for future human colonization, but currently there is no life on the moon.", "The Moon’s surface is extremely hostile to life—no air, extreme temperatures, and intense solar radiation. Scientist have found no life on the moon.", "Scientists are exploring ways to build habitats on the Moon for humans using lunar materials and shielding from radiation, but currently there is no life on the moon.", "Discoveries of frozen water in shadowed craters give hope that future lunar missions could support human life with extracted resources, but currently no scientist has proven life on the moon."]
+    }
+  ]
+}

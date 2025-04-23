@@ -1,0 +1,143 @@
+/* Glassmorphism chat design */
+:root {
+  --glass-bg: rgba(30, 30, 30, 0.6);
+  --glass-card: rgba(50, 50, 50, 0.5);
+  --glass-user: rgba(70, 70, 70, 0.6);
+  --text-light: #ffffff;
+  --text-dim: #dddddd;
+  --border: rgba(255, 255, 255, 0.1);
+  --highlight: rgba(255, 255, 255, 0.05);
+}
+
+/* Note: For this design to work properly, you should apply a dark background image or gradient to the parent element */
+.glass-chat {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  width: 100%;
+  max-width: 450px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.glass-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--border);
+}
+
+.glass-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--glass-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  border: 1px solid var(--border);
+}
+
+.glass-title {
+  flex: 1;
+}
+
+.glass-name {
+  color: var(--text-light);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.glass-status {
+  color: var(--text-dim);
+  font-size: 12px;
+  margin: 2px 0 0;
+}
+
+.glass-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 5px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.glass-message {
+  padding: 12px 16px;
+  border-radius: 14px;
+  max-width: 80%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.glass-message.bot {
+  background: var(--glass-card);
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.glass-message.user {
+  background: var(--glass-user);
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+  border: 1px solid var(--highlight);
+}
+
+.glass-message-text {
+  color: var(--text-light);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.glass-input-box {
+  display: flex;
+  background: var(--glass-card);
+  border-radius: 24px;
+  padding: 4px;
+  border: 1px solid var(--border);
+}
+
+.glass-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 10px 15px;
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.glass-input:focus {
+  outline: none;
+}
+
+.glass-send {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--glass-user);
+  border: 1px solid var(--highlight);
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.chatbot-wrapper {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+}

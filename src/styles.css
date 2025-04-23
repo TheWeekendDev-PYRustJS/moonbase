@@ -1,0 +1,262 @@
+/* Background Styling */
+.home-container {
+    background-image: url("./assets/astronaut_lunar_view2.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.landing-container {
+    background-image: url("./assets/planet-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sci-Fi Banner */
+.banner {
+    background: rgba(128, 128, 128, 0.5); /* Grey banner with 50% opacity */
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.banner h1 {
+    font-family: "Orbitron", sans-serif; /* Sci-Fi font */
+    font-size: 3rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .banner h1 {
+        font-size: 2rem;
+    }
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("./assets/planet-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+/* Navbar Styling */
+.navbar {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(130, 128, 128, 0.82);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.navbar.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.navbar.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00f2fe; /* Cyan hover effect */
+}
+
+/* Mobile Menu */
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Show menu icon */
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show menu on click */
+    }
+}
+
+
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.banner {
+  background: rgba(128, 128, 128, 0.5); /* Grey with 0.5 opacity */
+  padding: 20px 50px;
+  border-radius: 10px;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+/* Tour Page Background */
+.tour-container {
+    background-image: url("./assets/moonbase.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tour Info Banner */
+.tour-banner {
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.tour-banner h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.tour-banner p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .tour-banner {
+        padding: 20px;
+    }
+
+    .tour-banner h1 {
+        font-size: 2rem;
+    }
+
+    .tour-banner p {
+        font-size: 1rem;
+    }
+}
+
+/* Contact Page Background */
+.contact-container {
+    background-image: url("./assets/planet-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contact Form Box */
+.contact-box {
+    background: rgba(0, 0, 0, 0.6); /* Darkened background */
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+}
+
+.contact-box h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Form Fields */
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-box textarea {
+    height: 100px;
+}
+
+/* Submit Button */
+.contact-box button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: #00f2fe;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-box button:hover {
+    background-color: #00aaff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-box {
+        width: 90%;
+    }
+}
+/* Chat Box  Styles */
