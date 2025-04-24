@@ -1,5 +1,5 @@
 # moonbase
- A moon themed React Web app w/ a AI chatbot using:
+ A moon themed React Web app w/ an AI chatbot using:
  
  -React for the fronted
  
