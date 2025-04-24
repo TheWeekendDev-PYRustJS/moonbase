@@ -7,4 +7,4 @@
  
  -PyTorch to build the neural net for the chatbot
  
- *Added music but the pause and stop buttons still need to be added.
+ *Home page music buttons are still in the works.
