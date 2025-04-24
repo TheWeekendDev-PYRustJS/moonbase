@@ -1,5 +1,5 @@
 # moonbase
- Moon Facts Site using:
+ A moon themed React Web app w/ a AI chatbot using:
  
  -React for the fronted
  
